@@ -21,7 +21,6 @@
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:940px;margin:0 auto;padding:0 24px;}
-
   nav{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
   .nav-inner{max-width:940px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;}
   .brand{font-family:var(--mono);font-size:14px;color:var(--ink);}
@@ -30,7 +29,6 @@
   .nav-links a{color:var(--ink-dim);text-decoration:none;font-size:13px;font-weight:500;}
   .nav-links a:hover{color:var(--ink);}
   @media(max-width:700px){.nav-links{display:none;}}
-
   .hero{padding:80px 0 40px;border-bottom:1px solid var(--line);}
   .eyebrow{font-family:var(--mono);font-size:13px;color:var(--accent);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
   .eyebrow .cursor{display:inline-block;width:8px;height:16px;background:var(--accent);animation:blink 1s step-end infinite;}
@@ -47,25 +45,21 @@
   .contact-row{display:flex;flex-wrap:wrap;gap:20px;font-family:var(--mono);font-size:13px;}
   .contact-row a, .contact-row span{color:var(--ink-dim);text-decoration:none;}
   .contact-row a:hover{color:var(--accent);}
-
   section{padding:56px 0;border-bottom:1px solid var(--line);}
   .section-eyebrow{font-family:var(--mono);font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;}
   .section-title{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px;}
   .section-sub{color:var(--ink-dim);font-size:14px;margin-bottom:32px;}
-
   /* VALUE PROP CARDS */
   .vp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   @media(max-width:700px){.vp-grid{grid-template-columns:1fr;}}
   .vp-card{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:22px;}
   .vp-card h3{margin:0 0 8px;font-size:15.5px;color:var(--accent);}
   .vp-card p{margin:0;color:var(--ink-dim);font-size:13.5px;line-height:1.65;}
-
   /* SUMMARY */
   .summary-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
   .summary-list li{padding-left:22px;position:relative;color:var(--ink-dim);font-size:14.5px;line-height:1.7;}
   .summary-list li::before{content:'▸';position:absolute;left:0;color:var(--accent);}
   .summary-list li b{color:var(--ink);font-weight:600;}
-
   /* SKILLS */
   .filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
   .filter-chip{font-family:var(--mono);font-size:12px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:none;color:var(--ink-dim);cursor:pointer;}
@@ -76,7 +70,6 @@
   .skill-cat-title{font-family:var(--mono);font-size:12.5px;color:var(--accent-2);margin-bottom:10px;}
   .skill-grid{display:flex;flex-wrap:wrap;gap:9px;}
   .skill-pill{font-size:13px;padding:7px 14px;border-radius:6px;background:var(--bg-panel);border:1px solid var(--line);color:var(--ink);}
-
   /* EXPERIENCE */
   .job{padding:28px 0;border-top:1px solid var(--line);}
   .job:first-child{border-top:none;padding-top:0;}
@@ -92,7 +85,6 @@
   .toggle-btn{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px;}
   .job-stack{margin-top:14px;font-size:11.5px;color:var(--ink-dim);opacity:.8;font-family:var(--mono);line-height:1.6;}
   .job-stack b{color:var(--accent);}
-
   /* EDUCATION + CERTS */
   .foundation-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
   @media(max-width:700px){.foundation-grid{grid-template-columns:1fr;}}
@@ -100,7 +92,6 @@
   .foundation-tag{font-family:var(--mono);font-size:10.5px;color:var(--accent-2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;}
   .foundation-title{font-weight:700;font-size:15px;margin-bottom:4px;}
   .foundation-sub{color:var(--ink-dim);font-size:12.5px;}
-
   /* ARTIFACTS */
   .artifact-card{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:26px;margin-bottom:24px;}
   .artifact-eyebrow{font-family:var(--mono);font-size:11.5px;color:var(--accent);margin-bottom:8px;}
@@ -113,7 +104,6 @@
   .artifact-tags span{font-family:var(--mono);font-size:11px;background:rgba(0,217,163,.08);border:1px solid rgba(0,217,163,.25);color:var(--accent-2);padding:3px 9px;border-radius:5px;}
   .artifact-pending{border:1px dashed var(--accent);border-radius:12px;padding:30px;text-align:center;color:var(--ink-dim);font-size:13.5px;}
   .artifact-pending b{color:var(--accent);}
-
   /* MINI TIMELINE */
   .mini-timeline{position:relative;padding:20px 0 10px;margin-bottom:18px;overflow-x:auto;}
   .mt-track{position:absolute;top:38px;left:4px;right:4px;height:2px;background:var(--line);}
@@ -122,19 +112,28 @@
   .mt-dot{position:absolute;top:32px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--bg-card);z-index:1;}
   .mt-year{font-family:var(--mono);font-size:12px;color:var(--accent);margin-top:14px;font-weight:700;}
   .mt-label{font-size:11px;color:var(--ink-dim);margin-top:4px;line-height:1.4;padding:0 4px;}
-
+  /* ARTIFACT 2 — ML vs DL COMPARISON BLOCK */
+  .ml-dl-compare{display:flex;align-items:stretch;gap:16px;margin:4px 0 20px;flex-wrap:wrap;}
+  .cmp-col{flex:1;min-width:200px;background:var(--bg-panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
+  .cmp-col.dl{border-color:rgba(0,217,163,.35);}
+  .cmp-col.ml{border-color:rgba(124,92,255,.35);}
+  .cmp-tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;}
+  .cmp-col.ml .cmp-tag{color:var(--accent);}
+  .cmp-col.dl .cmp-tag{color:var(--accent-2);}
+  .cmp-example{font-weight:700;font-size:16px;margin-bottom:10px;color:var(--ink);}
+  .cmp-detail{font-size:12.5px;color:var(--ink-dim);line-height:1.6;margin-bottom:3px;}
+  .cmp-vs{align-self:center;font-family:var(--mono);font-weight:700;color:var(--ink-dim);opacity:.5;font-size:13px;padding:0 2px;}
+  @media(max-width:640px){.ml-dl-compare{flex-direction:column;} .cmp-vs{display:none;}}
   /* CONTACT */
   .contact-section{text-align:center;padding:70px 0;border-bottom:none;}
   .contact-section h2{font-size:26px;margin:0 0 10px;font-weight:700;}
   .contact-section p{color:var(--ink-dim);margin:0 0 28px;font-size:14.5px;}
   .cta-btn{font-family:var(--mono);background:var(--accent);color:#0d0620;padding:13px 28px;border-radius:6px;text-decoration:none;font-size:13.5px;font-weight:700;display:inline-block;}
   .cta-btn:hover{background:var(--accent-2);}
-
   footer{text-align:center;padding:24px 0;font-family:var(--mono);font-size:11px;color:var(--ink-dim);}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="nav-inner">
     <div class="brand">abhishek<span>.dev</span></div>
@@ -149,7 +148,6 @@
     </ul>
   </div>
 </nav>
-
 <div class="wrap">
   <div class="hero" id="bio">
     <h1>Abhishek Adepu</h1>
@@ -162,9 +160,7 @@
       <a class="btn-primary" href="#experience">View Experience</a>
       <a class="btn-secondary" href="#contact">Get In Touch</a>
     </div>
-
   </div>
-
   <section id="value">
     <div class="section-eyebrow">Personal Value Proposition</div>
     <div class="section-title">What I bring to an engineering team</div>
@@ -188,7 +184,6 @@
       </div>
     </div>
   </section>
-
   <section id="summary">
     <div class="section-eyebrow">Summary</div>
     <div class="section-title">Professional summary</div>
@@ -201,7 +196,6 @@
       <li>Proven record delivering production-grade <b>GenAI and agentic AI</b> systems in regulated financial environments with enterprise AI governance and risk compliance.</li>
     </ul>
   </section>
-
   <section id="skills">
     <div class="section-eyebrow">Skills</div>
     <div class="section-title">Technical toolkit</div>
@@ -236,12 +230,10 @@
       </div></div>
     </div>
   </section>
-
   <section id="experience">
     <div class="section-eyebrow">Experience</div>
     <div class="section-title">Professional experience</div>
     <div class="section-sub">Career progression across full stack and AI engineering roles.</div>
-
     <div class="job">
       <div class="job-head"><span class="job-title">Senior Full Stack Developer</span><span class="job-dates">Apr 2026 – Present</span></div>
       <div class="job-company">Adroit Innovative Solutions</div>
@@ -261,7 +253,6 @@
       <button class="toggle-btn">Show more →</button>
       <div class="job-stack"><b>Stack:</b> Kafka, AWS, Lambda, Cassandra, Hibernate, Java 8, Kubernetes, Microservices, MySQL, Node.js, Oracle, React, Spring Boot, LangGraph, LangChain, Python, OpenAI API, RAG, FastAPI, OpenSearch</div>
     </div>
-
     <div class="job">
       <div class="job-head"><span class="job-title">Full Stack Developer</span><span class="job-dates">2022 – Jan 2026</span></div>
       <div class="job-company">SVK Systems</div>
@@ -281,7 +272,6 @@
       <button class="toggle-btn">Show more →</button>
       <div class="job-stack"><b>Stack:</b> Agile, Angular, Azure, CI/CD, Docker, Java, Jenkins, Jira, JMS, Kafka, Microservices, Oracle, Spring Boot, Spring Cloud</div>
     </div>
-
     <div class="job">
       <div class="job-head"><span class="job-title">Software Developer</span><span class="job-dates">Sep 2019 – Jul 2021</span></div>
       <div class="job-company">Celigo, India</div>
@@ -298,9 +288,7 @@
       <button class="toggle-btn">Show more →</button>
       <div class="job-stack"><b>Stack:</b> Angular, AWS, Bootstrap, EC2, Java 8, JavaScript, jQuery, JUnit, PostgreSQL, React, Spring Boot, Spring MVC</div>
     </div>
-
   </section>
-
   <section id="foundation">
     <div class="section-eyebrow">Education & Certifications</div>
     <div class="section-title">Foundation</div>
@@ -312,16 +300,13 @@
       <div class="foundation-card"><div class="foundation-tag">Certification</div><div class="foundation-title">Certified Kubernetes Application Developer</div><div class="foundation-sub">CNCF</div></div>
     </div>
   </section>
-
   <section id="artifacts">
     <div class="section-eyebrow">Course Artifacts</div>
     <div class="section-title">Selected work</div>
     <div class="section-sub">Deliverables from coursework, presented with objective, process, tools, and value proposition for each.</div>
-
     <div class="artifact-card">
       <div class="artifact-eyebrow">Artifact 01 &middot; AI &amp; ML Timeline</div>
       <div class="artifact-title">A History of AI and Machine Learning — Interactive Timeline</div>
-
       <div class="mini-timeline">
         <div class="mt-track"></div>
         <div class="mt-item"><div class="mt-dot"></div><div class="mt-year">1950</div><div class="mt-label">Turing Test proposed</div></div>
@@ -334,7 +319,6 @@
         <div class="mt-item"><div class="mt-dot"></div><div class="mt-year">2022</div><div class="mt-label">ChatGPT launches</div></div>
       </div>
       <a class="btn-secondary" style="display:inline-block;margin-bottom:24px;" href="https://www.tiki-toki.com/timeline/entry/2250937/A-History-of-AI-and-Machine-Learning/" target="_blank" rel="noopener">View Full Interactive Timeline ↗</a>
-
       <div class="artifact-field">
         <h4>Introduction</h4>
         <p>A self-built, interactive timeline tracing roughly 75 years of artificial intelligence and machine learning history — from Alan Turing's earliest questions about machine intelligence through the generative AI boom of today.</p>
@@ -374,16 +358,69 @@
         </p>
       </div>
     </div>
-  </section>
 
+    <div class="artifact-card">
+      <div class="artifact-eyebrow">Artifact 02 &middot; Comparative Analysis</div>
+      <div class="artifact-title">Machine Learning vs. Deep Learning — A Comparative Case Study</div>
+
+      <div class="ml-dl-compare">
+        <div class="cmp-col ml">
+          <div class="cmp-tag">Machine Learning</div>
+          <div class="cmp-example">Email Spam Detection</div>
+          <div class="cmp-detail">Logistic Regression / Decision Tree</div>
+          <div class="cmp-detail">Human-defined features: keywords, sender, links</div>
+        </div>
+        <div class="cmp-vs">VS</div>
+        <div class="cmp-col dl">
+          <div class="cmp-tag">Deep Learning</div>
+          <div class="cmp-example">Autonomous Driving</div>
+          <div class="cmp-detail">Convolutional Neural Network (CNN)</div>
+          <div class="cmp-detail">Self-learned features: raw camera + LIDAR data</div>
+        </div>
+      </div>
+      <a class="btn-secondary" style="display:inline-block;margin-bottom:24px;" href="ML_vs_DL_Case_Study%20(1).pdf" target="_blank" rel="noopener">Read the Full Report ↗</a>
+
+      <div class="artifact-field">
+        <h4>Introduction</h4>
+        <p>A comparative case study asking a simple question with a not-so-simple answer: when does a problem call for machine learning, and when does it actually need deep learning? Built around two real, contrasting examples — spam detection and autonomous driving — with a real production case study (Waymo) grounding the deep learning side in what's actually running today, not just theory.</p>
+      </div>
+      <div class="artifact-field">
+        <h4>Description</h4>
+        <p>The report pairs one classic ML use case (spam filtering, using logistic regression and decision trees) against one DL use case (autonomous driving, using CNNs), and pushes past "here's what each one is" into "here's specifically why this approach wins and the other loses" for each problem — the kind of judgment call that matters more in practice than knowing the definitions.</p>
+      </div>
+      <div class="artifact-field">
+        <h4>Objective</h4>
+        <p>To differentiate machine learning and deep learning by analyzing real-world applications of each, and to build a clear, defensible argument for why one approach fits a given problem while the other would fall short.</p>
+      </div>
+      <div class="artifact-field">
+        <h4>Process</h4>
+        <p>Selected one example each from the course's ML and DL lesson content, then researched a real production case study — Waymo's autonomous vehicle deployment — to ground the deep learning example in current industry practice rather than a textbook description. Used Claude to research current sources and structure the comparative argument, then went through several editing passes: rewriting the analysis in more natural prose instead of a formulaic bullet-list structure, simplifying the visual formatting, and trimming length so the reasoning stayed sharp without padding.</p>
+      </div>
+      <div class="artifact-field">
+        <h4>Tools &amp; Technologies Used</h4>
+        <div class="artifact-tags">
+          <span>Claude (AI research &amp; writing)</span><span>Microsoft Word</span><span>AIMultiple (industry case studies)</span>
+        </div>
+      </div>
+      <div class="artifact-field">
+        <h4>Value Proposition</h4>
+        <p><b>Unique value:</b> Artifact 1 shows the ability to synthesize sprawling historical material into a clear narrative. This one shows something different — the ability to take a live technical tradeoff and argue a side, which is closer to what actually happens in engineering conversations than a neutral summary would be.</p>
+        <p style="margin-top:8px;"><b>Relevance:</b> Deciding when a problem genuinely needs deep learning versus when a simpler, cheaper model will do is a real cost and complexity call in agentic AI and RAG work — not an academic exercise. This artifact is evidence of that judgment, not just knowledge of the definitions.</p>
+      </div>
+      <div class="artifact-field">
+        <h4>References</h4>
+        <p style="font-size:12.5px;line-height:1.8;">
+          AIMultiple. (2026). Top 50 Deep Learning Use Case &amp; Case Studies. https://aimultiple.com/deep-learning-applications
+        </p>
+      </div>
+    </div>
+  </section>
   <div class="contact-section" id="contact">
     <h2>Let's talk</h2>
     <p>Open to Senior Full Stack / AI Engineering roles.</p>
   </div>
-
   <footer>© 2026 Abhishek Adepu — Built with care, deployed on GitHub Pages</footer>
 </div>
-
 <script>
   document.querySelectorAll('.toggle-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
@@ -392,9 +429,6 @@
       btn.textContent = job.classList.contains('expanded') ? 'Show less ←' : 'Show more →';
     });
   });
-
-
-
   const filters = document.querySelectorAll('.filter-chip');
   const groups = document.querySelectorAll('.skill-cat');
   filters.forEach(f=>{
